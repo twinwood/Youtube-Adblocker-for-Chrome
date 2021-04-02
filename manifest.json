@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+
+    "name": "Twinwood Youtube Adblocker",
+    "description": "Twinwood Youtube Adblocker",
+    "version": "1.0",
+    
+    "content_scripts":[{
+	"js":["script.js"],
+	"run_at": "document_idle",
+	"matches":["<all_urls>"]
+    }],
+    
+    "permissions": [
+    "tabs", 
+    "activeTab"
+    ]
+
+
+}
